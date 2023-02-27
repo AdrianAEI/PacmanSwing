@@ -1,0 +1,62 @@
+@options
+@packages
+@argfile
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Pacman 1.1-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Pacman 1.1-SNAPSHOT API'
+pl.polsl.Adrian.Pirog.Pacman.controller
+pl.polsl.Adrian.Pirog.Pacman.exception
+pl.polsl.Adrian.Pirog.Pacman.main
+pl.polsl.Adrian.Pirog.Pacman.model
+pl.polsl.Adrian.Pirog.Pacman.view
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/controller/GameController.java'
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/exception/NegativeValueException.java'
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/exception/TooBigNumberException.java'
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/main/PacmanMain.java'
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/model/Block.java'
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/model/BoardModel.java'
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/model/GameModel.java'
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/model/PacmanModel.java'
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/view/BoardView.java'
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/view/GameView.java'
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/view/MenuView.java'
+'C:/Users/adria/Desktop/Pirog.Adrian.cw3.final/src/main/java/pl/polsl/Adrian/Pirog/Pacman/view/ScoreView.java'
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\src\main\java = 1668305868000
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\allclasses-index.html = 1670787407971
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\allpackages-index.html = 1670787407975
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\copy.svg = 1670787408022
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\element-list = 1670787407600
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\help-doc.html = 1670787408010
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\index-all.html = 1670787407999
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\index.html = 1670787407950
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\jquery-ui.overrides.css = 1670787408062
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\member-search-index.js = 1670787407982
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\module-search-index.js = 1670787407977
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\overview-summary.html = 1670787408002
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\overview-tree.html = 1670787407934
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\package-search-index.js = 1670787407978
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\script.js = 1670787408019
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\search.js = 1670787408030
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\serialized-form.html = 1670787407774
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\stylesheet.css = 1670787408014
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\tag-search-index.js = 1670787407983
+C:\Users\adria\Desktop\Pirog.Adrian.cw3.final\target\site\apidocs\type-search-index.js = 1670787407980

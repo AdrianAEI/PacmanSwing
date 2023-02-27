@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"pl.polsl.Adrian.Pirog.Pacman.controller"},{"l":"pl.polsl.Adrian.Pirog.Pacman.exception"},{"l":"pl.polsl.Adrian.Pirog.Pacman.main"},{"l":"pl.polsl.Adrian.Pirog.Pacman.model"},{"l":"pl.polsl.Adrian.Pirog.Pacman.view"}];updateSearchResults();
