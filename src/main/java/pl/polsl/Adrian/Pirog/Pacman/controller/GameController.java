@@ -38,7 +38,7 @@ public class GameController implements KeyListener, ActionListener {
         initView();
     }
     private void startEnemyController() {
-    this.enemyController=new EnemyController(model.getBoard().getGhostModel(), model.getBoard().getPacmanModel());
+    this.enemyController=new EnemyController(model.getBoard().getGhostModel(), model.getBoard().getPacmanModel(), model.getBoard());
     }
     /**
      * Add action listener to buttons
@@ -86,6 +86,7 @@ public class GameController implements KeyListener, ActionListener {
         view.setBoardListener(this);
         this.inGame = true;
         startEnemyController();
+        checkGameState();
     }
 
     /**
@@ -115,7 +116,10 @@ public class GameController implements KeyListener, ActionListener {
             view.dispose();
         }
         //to do change this with ghost moving
-        if (inGame) checkGameState();
+        if (inGame){
+            checkGameState();
+            enemyController.moveGhost();
+        }
     }
 
     /**
@@ -162,9 +166,11 @@ public class GameController implements KeyListener, ActionListener {
         }
     }
     public void checkGameState(){
-        if(enemyController.checkCollision()==true){
-            inGame=false;
-            view.dispose();
-        }
+
+            if(enemyController.checkCollision()==true){
+                inGame=false;
+                view.dispose();
+            }
+
     }
 }

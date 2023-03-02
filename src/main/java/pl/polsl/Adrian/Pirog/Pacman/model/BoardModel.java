@@ -202,5 +202,11 @@ public class BoardModel {
             pacmanModel.loadCurrentPacmanPosition(tPacLine - 1, tPacCol);
         }
     }
+    public void moveGhost() {
+        int tGhoLine = ghostModel.getPosLine();
+        int tGhoCol = ghostModel.getPosColum();
+        currentBoardList.get(tGhoLine).set(tGhoCol, empty);
+        currentBoardList.get(tGhoLine - 1).set(tGhoCol, pacman);
+    }
 
 }
