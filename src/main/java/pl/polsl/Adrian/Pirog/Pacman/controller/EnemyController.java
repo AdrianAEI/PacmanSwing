@@ -38,8 +38,17 @@ public class EnemyController {
     }
 
     void moveGhost(){
-        this.ghostModel.loadCurrentGhostPosition(ghostModel.getPosLine()-1, ghostModel.getPosColum()-1);
-        this.boardModel.moveGhost();
+        if(pacmanModel.getPosColum()>ghostModel.getPosColum())
+        {
+            boardModel.moveGhostRight();
+        }else if(pacmanModel.getPosColum()<ghostModel.getPosColum()){
+            boardModel.moveGhostLeft();
+        }else if(pacmanModel.getPosLine()>ghostModel.getPosLine()){
+            boardModel.moveGhostDown();
+        }else if(pacmanModel.getPosLine()<ghostModel.getPosLine()){
+            boardModel.moveGhostUp();
+        }
+
     }
 
 }

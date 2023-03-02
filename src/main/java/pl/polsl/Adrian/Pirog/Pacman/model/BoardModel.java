@@ -19,6 +19,8 @@ public class BoardModel {
     private final int empty = Block.EMPTY.ordinal();
     private final int block = Block.BLOCK.ordinal();
     private final int pacman = Block.PACMAN.ordinal();
+    private final int redGhost = Block.REDGHOST.ordinal();
+    private final int pill =Block.PILL.ordinal();
 
     /**
      * Model of board constructor
@@ -205,8 +207,57 @@ public class BoardModel {
     public void moveGhost() {
         int tGhoLine = ghostModel.getPosLine();
         int tGhoCol = ghostModel.getPosColum();
-        currentBoardList.get(tGhoLine).set(tGhoCol, empty);
-        currentBoardList.get(tGhoLine - 1).set(tGhoCol, pacman);
+        currentBoardList.get(tGhoLine).set(tGhoCol, pill);
+        currentBoardList.get(tGhoLine + 1).set(tGhoCol, redGhost);
+        ghostModel.loadCurrentGhostPosition(tGhoLine + 1,tGhoCol);
+    }
+    public void moveGhostRight() {
+        int tGhoLine = ghostModel.getPosLine();
+        int tGhoCol = ghostModel.getPosColum();
+        if (currentBoardList.get(0).size() > tGhoCol + 1 && currentBoardList.get(tGhoLine).get(tGhoCol + 1) != block) {
+            currentBoardList.get(tGhoLine).set(tGhoCol, pill);
+            currentBoardList.get(tGhoLine).set(tGhoCol + 1, redGhost);
+            ghostModel.loadCurrentGhostPosition(tGhoLine, tGhoCol + 1);
+        }
+    }
+
+    /**
+     * Move pacman model to left
+     */
+    public void moveGhostLeft() {
+        int tGhoLine = ghostModel.getPosLine();
+        int tGhoCol = ghostModel.getPosColum();
+        if (0 <= tGhoCol - 1 && currentBoardList.get(tGhoLine).get(tGhoCol - 1) != block) {
+            currentBoardList.get(tGhoLine).set(tGhoCol, pill);
+            currentBoardList.get(tGhoLine).set(tGhoCol - 1, redGhost);
+            ghostModel.loadCurrentGhostPosition(tGhoLine, tGhoCol - 1);
+        }
+    }
+
+    /**
+     * Move pacman model to down
+     */
+    public void moveGhostDown() {
+        int tGhoLine = ghostModel.getPosLine();
+        int tGhoCol = ghostModel.getPosColum();
+        if (currentBoardList.size() > tGhoLine + 1 && currentBoardList.get(tGhoLine + 1).get(tGhoCol) != block) {
+            currentBoardList.get(tGhoLine).set(tGhoCol, pill);
+            currentBoardList.get(tGhoLine + 1).set(tGhoCol, redGhost);
+            ghostModel.loadCurrentGhostPosition(tGhoLine + 1, tGhoCol);
+        }
+    }
+
+    /**
+     * Move pacman model to up
+     */
+    public void moveGhostUp() {
+        int tGhoLine = ghostModel.getPosLine();
+        int tGhoCol = ghostModel.getPosColum();
+        if (0 <= tGhoLine - 1 && currentBoardList.get(tGhoLine - 1).get(tGhoCol) != block) {
+            currentBoardList.get(tGhoLine).set(tGhoCol, pill);
+            currentBoardList.get(tGhoLine - 1).set(tGhoCol, redGhost);
+            ghostModel.loadCurrentGhostPosition(tGhoLine - 1, tGhoCol);
+        }
     }
 
 }
